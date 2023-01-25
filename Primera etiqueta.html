@@ -6,17 +6,19 @@
         <meta name="Keywords" content="html5, css3, Javascript,diseno web"/>
 
         <title>Pagina HTML 5</title>
+
+        <!--Estilos CSS-->
         <link rel="stylesheet" href="mihojadeestilos.css"/>
 
     </head>
 <body>
     <!--Cabecera-->
-    <header>
+    <header id="cabeceraweb">
         <h1> Este seria el titulo de nuestra Web</h1>
     </header>
 
      <!--Barra de Navegacion-->
-     <nav>
+     <nav id="navegacionprincipal">
         <ul>
             <li>Quienes Somos</li>
             <li>Nuestros Productos</li>
@@ -26,24 +28,34 @@
      </nav>
 
       <!--Barra Lateral-->
-      <aside>
+      <aside id="barralateral">
         <blockquote>Primer elemento</blockquote>
         <blockquote>Segundo elemento</blockquote>
         <blockquote>Tercer elemento</blockquote>
       </aside>
 
       <!--Contenido Principal-->
-      <section>
+      <section id="contenidoprincipal">
         <article>
             <header>
                 <hgroup>
-                    <h2> Titulo noticia 1</h2>
-                    <h3>Subtitulo noticia 1</h3>
+                    <h2> <mark>Titulo noticia 1</mark> </h2>
+                    <h3>Subtitulo <em>noticia 1</em> </h3>
                 </hgroup>
+                <!--Fecha Hora-->
+
+                <time datetime="2023/01/25" pubdate>Noticia Publicada el 23 de agosto 2022</time>
             </header>
                 <p>Noticia 1</p>
-                <p>Seguimos hablando de la Noticia1</p>
+                <p><strong>Seguimos</strong> hablando de la Noticia1</p>
                 <p>Terminado de Hablar de la Noticia1</p>
+
+           <!--Insertar imagenes-->
+            <figure>
+                <img src="imagenes/1110.jpeg"/>
+                <figcaption>Paisaje Invernal</figcaption>
+            </figure>
+            
             <footer>
                 <p>Comentarios</p>
             </footer>
@@ -58,7 +70,7 @@
                 <h3>Subtitulo noticia 2</h3>
             </hgroup>
             </header>                        
-                <p>Noticia 2</p>
+                <p> La pelicula mas larga es el <cite>TITANIC</cite></p>
                 <p>Seguimos hablando de la Noticia2</p>
                 <p>Terminado de Hablar de la Noticia2</p>
             <footer>
@@ -86,8 +98,8 @@
       </section>
 
       <!--Footer-->
-      <footer>
-        Derechos reservados Tlfono 54074587
+      <footer id="piedepagina">
+        <small>Derechos reservados</small>  Tlfono 54074587 <address>carlos.monier87@gmail.com</address> 
       </footer>
 
 </body>
