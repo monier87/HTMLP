@@ -6,9 +6,14 @@
         <meta name="Keywords" content="html5, css3, Javascript,diseno web"/>
 
         <title>Pagina HTML 5</title>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+            }
+        </style>
 
         <!--Estilos CSS-->
-        <link rel="stylesheet" href="mihojadeestilos.css"/>
+        <link rel="stylesheet" href="CSS/mihojadeestilos.css"/>
 
     </head>
 <body>
@@ -17,8 +22,8 @@
         <h1> Este seria el titulo de nuestra Web</h1>
     </header>
 
-     <!--Barra de Navegacion-->
-     <nav id="navegacionprincipal">
+         <!--Barra de Navegacion (lista desordenada)-->
+     <nav>
         <ul>
             <li>Quienes Somos</li>
             <li>Nuestros Productos</li>
@@ -26,6 +31,28 @@
             <li>Precios</li>
         </ul>
      </nav>
+
+     <!--Tabla-->
+    <table style="width: 500px;">
+        <!--Columna-->
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+         </thead>
+        <tbody>
+            <tr>
+                <!--Fila-->
+                <td>Fruta</td>
+                <td>45.50</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td></td>
+            <td>Total 25.69</td>
+        </tfoot>
+    </table>
 
       <!--Barra Lateral-->
       <aside id="barralateral">
@@ -50,12 +77,13 @@
                 <p><strong>Seguimos</strong> hablando de la Noticia1</p>
                 <p>Terminado de Hablar de la Noticia1</p>
 
-           <!--Insertar imagenes-->
+           <!--Insertar imagenes y enlaces a paginas externas-->
+           <a target="_blank" href="https://github.com/monier87">Ir github</a>
             <figure>
-                <img src="imagenes/1110.jpeg"/>
+                <img src="imagenes/1110.jpeg" height="400"/>
                 <figcaption>Paisaje Invernal</figcaption>
             </figure>
-            
+
             <footer>
                 <p>Comentarios</p>
             </footer>
@@ -97,6 +125,21 @@
 
       </section>
 
+<!--Formularios-->
+            <form action="/formulario" method="POST">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="Nombre" name="nombre" placeholder="Nombre"/>
+                <br>
+                <label for="Apellido">Apellido</label>
+                <input type="text" id="Apellido" name="apellidos" placeholder="apellido"/> 
+                <br>
+                <label for="Comentario">Comentario</label>
+                <textarea cols="50" rows="10" id="comentario" placeholder="ingrese comentario " name="comentario "></textarea>
+                <br>
+                <button type="button">Tipo Boton</button>
+                <button type="reset">Tipo reset</button>
+                <button type="submit">Tipo submit</button>
+            </form>
       <!--Footer-->
       <footer id="piedepagina">
         <small>Derechos reservados</small>  Tlfono 54074587 <address>carlos.monier87@gmail.com</address> 
